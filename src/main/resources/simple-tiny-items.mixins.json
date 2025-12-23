@@ -1,14 +1,12 @@
 {
 	"required": true,
+	"minVersion": "0.8",
 	"package": "brax.simpletinyitems.mixin",
 	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-		"ExampleMixin"
+	"client": [
+		"HeldItemRendererMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
-	},
-	"overwrites": {
-		"requireAnnotations": true
 	}
 }
