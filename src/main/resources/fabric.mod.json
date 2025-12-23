@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "simple-tiny-items",
+	"version": "1.21.11",
+	"name": "Simple Tiny Items",
+	"description": "Simply shrinks your items down to a scale that make it much easier to see the world in front of you!",
+	"authors": [
+		"BraxtonsDev"
+	],
+	"contact": {
+		"homepage": "https://braxtonsdev.github.io/BraxtonsDevShowcase/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/simple-tiny-items/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"brax.simpletinyitems.SimpleTinyItems"
+		],
+		"fabric-datagen": [
+			"brax.simpletinyitems.SimpleTinyItemsDataGenerator"
+		],
+		"client": [
+			"brax.simpletinyitems.SimpleTinyItemsClient"
+		]
+	},
+	"mixins": [
+		"simple-tiny-items.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.3",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
